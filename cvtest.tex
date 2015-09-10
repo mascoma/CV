@@ -1,0 +1,220 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} 
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=15mm,
+ right=25mm,
+ top=20mm,
+ bottom=20mm,
+ }
+
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozio? for ShareLaTeX use
+%\setmainfont[
+%SmallCapsFont = Fontin-SmallCaps.otf,
+%BoldFont = Fontin-Bold.otf,
+%ItalicFont = Fontin-Italic.otf
+%]
+%{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+%\usepackage[absolute]{textpos}
+
+%\setlength{\TPHorizModule}{30mm}
+%\setlength{\TPVertModule}{\TPHorizModule}
+%\textblockorigin{2mm}{0.65\paperheight}
+%\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge\textsc{Xin Chen}
+	}\normalsize{PhD}\par}
+ 
+ 
+\noindent\hfil\rule{\textwidth}{.8pt}\hfil \\[-0.80\baselineskip]%
+\noindent\hfil\rule{\textwidth}{.8pt}\hfil
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\begin{tabular}{lp{12.5cm}}
+    %\textsc{Place and Date of Birth:} & Someplace, Italy  | dd Month 1912 \\
+    \textsc{Address:}   & 78 College St., LSC, Dartmouth College, Hanover, NH 03755 \\
+    \textsc{Phone:}     & (718) 200-0932 | (603) 646-8115 \\
+    \textsc{email:}     &  \href{mailto:chenx1122@gmail.com}{chenx1122@gmail.com}\\
+    \textsc{website:}     &  \href{https://xcbiology.wordpress.com/}{xcbiology.wordpress.com}\\
+    \textsc{status:}     & permanent resident (Green card holder)\\
+    
+\end{tabular}
+\\
+\\
+\\
+%Section: Work Experience at the top
+\section{Research and Work Experience}
+\begin{tabular}{lp{12cm}}
+Current-Mar, 2015 & Postdoctoral Research Associate, Dartmouth College, US \\&\footnotesize{I am working on computational evolutionary projects of microbes in Dr. Zhaxybayeva's lab. I create mathematical models to simulation the dynamic of host bacteria population under the influence of Gene transfer agent (GTA) system, a phage-like particle randomly packing host bacterial genome fragments. Meanwhile, I examine the structure of GTA major capsid protein to infer the possible DNA packing mechanisms during the GTA resembling. Secondly, I study the thermal adaptation of bacteria by examining the pattern of methylome and gene expression in species \textit{Kosmotoga olearia} (Order Thermatogales), which could survive in a wide temperature range from 20 to $80\,^{\circ}{\rm C}$. I also implement metagenomics analyses for the samples from hypersaline envrionment.}\\\multicolumn{2}{c}{} \\
+Dec, 2014-Sep, 2009& Graduate Assistant (PhD program), Graduate Center, CUNY, US\\&\footnotesize{During my PhD study, I analyzed next generation sequencing data to perform phylogenomic study and explore evolutionary history of the target group; I inferred the evolutionary processes via fitting genetic, phenotypic and environmental data to mathematical models in Bayesian/likelihood statistical framework and detecting potential correlations of multi-variable data; I used phylogeographic and population genetics techniques and models to explore genetic diversity and speciation of multiple organisms; I also did molecular biology wet lab work including DNA extraction, PCR, Sanger sequencing.}\\\multicolumn{2}{c}{} \\
+Dec, 2014-Sep, 2009&Adjunct lecturer, College of Staten Island, CUNY, US\\&\footnotesize{General Biology Lab (Bio 171), Introduction Biology Lab (Bio 107), Evolution (Bio 322), General biology tutor}\\ 
+\multicolumn{2}{c}{} \\
+Sep, 2004-July, 2009&Sichuan University, China\\&\footnotesize{Bacterial culture, gene clone, wildlife survey in field, geometric morphmetrics}\\ 
+\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{lp{12cm}}	
+Sep, 2009-Dec, 2014 & PhD, The City University of New York, NY | Program: Biology | Major: Computational Biology | Advisor: Dr. Frank T. Burbrink | Thesis: Integrating phylogenomics, biogeography and systematics to explore the taxonomy and the rise of the ratsnakes\\\multicolumn{2}{c}{} \\
+June, 2013& NSF Next-generation Sequencing Data for Phylogenetics and Phylogeography workshop at NESCent, Durham, NC\\\multicolumn{2}{c}{} \\
+June, 2012& NSF Macroevolutionary methods in R workshop, Santa Barbara, CA\\\multicolumn{2}{c}{} \\
+2006-2009&Master of Science, Sichuan University, China | Major: Zoology | Advisor: Professor Ermi Zhao | Thesis: The Anatomy of Mountain Stream Hynobiid (\textit{Batrachuperus pinchonii})\\\multicolumn{2}{c}{} \\
+2002-2006&Bachelor of Science, Sichuan University, China | Major: Biotechnology | Lab internship: Cloning and function identification of anti-ultraviolet radiation and DNA repairing enzyme genes in \textit{Dunaliella salina}, Supervisor: Dr. Yi Cao  \\ \multicolumn{2}{c}{} \\
+\end{tabular}
+\\ 
+ 
+%Section: Scholarships and additional info
+\section{Skills and knowledge}
+\begin{tabular}{lp{12cm}}
+Biology& microbiology, genetics, bioinformatics, molecular biology, population genetics, ecology, evolution, phylogenomics, phylogenetic comparative methods, phylogenetic inference, geometric-morphmetric, biogeography, species distribution modelling, GIS\\\multicolumn{2}{c}{} \\
+Computer& programming (R, Python, C, C++, Perl, Java), database (MySQL), data visualization (R, Matlab, circos, Python), Unix/Linux, {\fb \LaTeX}, Microsoft Office, Adobe Photoshop, Adobe Illustrator\\\multicolumn{2}{c}{} \\
+Math and Statistics&calculus, linear algebra, geometry, probability, Bayesian, maximum likelihood, approximate Bayesian computation, regression, multivariable analysis, stochastic simulation (Gillespie, MCMC), machine learning (clustering, SVM, network)\\\multicolumn{2}{c}{} \\
+Languages&English, Chinese\\\multicolumn{2}{c}{} \\
+\end{tabular}
+\\
+
+%Section: Publications
+\section{Publications}
+Kai He, Nai-Qing Hu, \textbf{Xin Chen}, and Jia-Tang Li, Xue-Long Jiang. (2015) Interglacial refugia preserved high genetic diversity of the Chinese mole shrew in the mountains of southwest China. Heredity. (accepted)\\
+\\[-0.30\baselineskip]%
+\textbf{Xin Chen}, Alan R. Lemmon, Emily Moriarty Lemmon, R. Alexander Pyron, Frank T. Burbrink. (2015) Comparing Methods for Estimating the Phylogeny of Ratsnakes from Phylogenomic Data. (under review)\\ 
+\\[-0.30\baselineskip]%
+Fei Zhu, Qin Liu, Liang Zhang, \textbf{Xin Chen}, Fang Yan, Robert Murphy, Cong Guo, Peng Guo. (2015) Molecular phylogeography of white-lipped tree viper (\textit{Trimeresurus albolabris}): A joint influence from heterogeneous habitat and inter-glacial expansion. (under review)\\
+\\[-0.30\baselineskip]%
+Guo, Peng; Liu, Qin; Zhu, Fei; Zhong, Guang; \textbf{Chen, Xin}; Myers, Edward; Zhang, Liang; Ziegler, Thomas; Nguyen, Truong; Burbrink, Frank. (2015) Habitat differentiation promotes west to east diversification in Stejneger?s pit viper \textit{Viridovipera stejnegeri} (Schmidt, 1925) (Reptilia: Serpentes: Viperidae). (under review)
+\\
+\\[-0.30\baselineskip]%
+\textbf{Chen, X.}, A. D. McKelvy, L. L. Grismer, M. Matsui, K. Nishikawa and F. T. Burbrink. (2014)  The phylogenetic position and taxonomic status of the Rainbow Tree Snake \textit{Gonyophis margaritatus} (Peters, 1871) (Squamata: colubridae). Zootaxa 3881, 532-548.\\
+\\[-0.30\baselineskip]%
+\textbf{Chen, X.}, Jiang, K., Guo, P., Huang, S., Rao, D., Ding, L., Takeuchi, H., Che, J., Zhang, Y., Myers, E. A. and F.T, Burbrink. (2014) Assessing species boundaries and the phylogenetic position of the rare Szechwan ratsnake, \textit{Euprepiophis perlaceus} (Serpentes: Colubridae), using coalescent-based methods. Molecular Phylogenetics and Evolution, 70, 130-136.\\
+\\[-0.30\baselineskip]%
+\textbf{Chen, X.}, Huang, S., Guo, P., Colli, G.R., Nieto Montes de Oca, A., Vitt, L.J., Pyron, R.A. and Burbrink, F.T. (2013) Understanding the formation of ancient intertropical disjunct distributions using asian and neotropical hinged-teeth snakes (\textit{Sibynophis} and \textit{Scaphiodontophis}: Serpentes: Colubridae). Molecular Phylogenetics and Evolution, 66, 254-261.\\
+\\[-0.30\baselineskip]%
+Burbrink, F.T., \textbf{Chen, X.}, Myers, E.A., Brandley, M.C. and Pyron, R.A. (2012) Evidence for determinism in species diversification and contingency in phenotypic evolution during adaptive radiation. Proceedings of the Royal Society B: Biological Sciences, 279, 4817-4826.\\
+\\[-0.30\baselineskip]%
+Song Huang, Li Ding, Frank T. Burbrink, Jun Yang, Jietang Huang, Chen Lin, \textbf{Xin Chen}, Yaping Zhang. (2012) A New Species of the Genus \textit{Elaphe} (Squamata: Colubridae) from Zoige County, Sichuan, China. Asian Herpetological Research. 3, 38-45.\\
+\\[-0.30\baselineskip]%
+Guo, P., C. Li, A. Malhotra, Q. Liu, \textbf{X. Chen}, K. Jiang, Y. Wang. (2011) Molecular Phylogeography of Jerdon's Pit Viper \textit{Protobothrops jerdonii} (G\"unther, 1875): Importance of the Tibetan Plateau Uplift. Journal of Biogeography. 38, 2326-2336.\\
+\\[-0.30\baselineskip]%
+Wu, Y. K., Y. Z. Wang, K. Jiang, \textbf{X. Chen}, J. Hanken. (2009) Homoplastic Evolution of External Coloration in Asian Stout Newts (\textit{Pachytriton}) Inferred from Molecular Phylogeny. Zoologica Scripta, 39, 9-22.\\
+\\[-0.30\baselineskip]%
+\textbf{Chen, X.}, H. Chen, E. M. Zhao. (2009) Anatomy of Head Muscles of \textit{Batrachuperus pinchonii}. Sichuan Journal of Zoology, Sichuan. Vol. 28 No. 3: 417-421.\\
+\\[-0.30\baselineskip]%
+\textbf{Chen, X.}, H. Chen, E. M. Zhao. (2009) Anatomy of the Digestive and Respiratory Systems of \textit{Batrachuperus pinchonii}. Sichuan Journal of Zoology, Sichuan. Vol.28 No. 4: 565-568.\\
+\\[-0.30\baselineskip]%
+\textbf{Chen, X.}, E. M. Zhao. (2007) Research on Lepidosis Variation of \textit{Sphenomorphus indicus}. Sichuan Journal of Zoology, Sichuan. Vol. 26 No. 2: 392-394.\\
+\\[-0.30\baselineskip]%
+
+
+\section{Presentation}
+Burbrink, F.T., \textbf{X. Chen}. (Aug 2015) Estimating species tree phylogenies from 100s of loci and predicting community structure of snakes on eastern Nearctic islands. Society for the Study of Amphibians and Reptiels 2015 University of Kansas Meeting.\\
+\\[-0.30\baselineskip]%
+Irene Feng, \textbf{Xin Chen}, Olga Zhaxybayeva. (May 2015) Bacterial DNA modification in response to temperature fluctuations. Dartmouth Science Day, Dartmouth College, Hanover, NH.\\
+\\[-0.30\baselineskip]%
+\textbf{Chen, X.}, F.T. Burbrink. (June 2014) Exploring the origins and diversification of ratsnakes using anchored hybrid enrichment to generate 100s of loci for species tree estimation. The Evolution 2014 Conference, Raleigh, NC.\\
+\\[-0.30\baselineskip]%
+\textbf{Xin Chen}. (Aug 2013) The Causes of Replicated Adaptive Radiations in Ratesnakes. Invited talk, Chengdu Institute of Biology, Chinese Academy of Sciences, Chengdu, China.\\
+\\[-0.30\baselineskip]%
+\textbf{Chen, X.}, F.T. Burbrink. (Aug 2012) Processes of morphological and ecological trait diversification in globally distributed ratsnakes. World Congress of Herpetology, Vancouver, Canada.\\
+\\[-0.30\baselineskip]%  
+\textbf{Chen, X.}, F.T. Burbrink. (June 2011) Patterns of Morphological and Ecological Evolution in Rapidly Diversifying Ratsnakes Across the Globe. The Evolution 2011 Conference, Norman, Oklahoma.\\
+\\[-0.30\baselineskip]%  
+\textbf{Chen, X.}, F.T. Burbrink. (Aug 2010) Patterns of Diversification in Old World Ratsnakes. Doctoral Science Student Orientation 2010, Graduate Center, The City College of New York. \\
+\\[-0.30\baselineskip]% 
+\textbf{Chen, X.}, F.T. Burbrink. (July 2010) Patterns of Diversification in Old World Ratsnakes.   Joint Meeting of Ichthyologists and Herpetologists, Providence, Rhode Island.  \\
+\\[-0.30\baselineskip]% 
+\textbf{Chen, X.}, E.M. Zhao. (Nov 2008) Anatomy of the Skeletal System of \textit{Batrachuperus pinchonii} (David, 1871[1872]) (Caudata: Hynobiidae). Conference on Conservation and Captive Breeding of Chinese Amphibians and Reptiles, Hainan, China. \\
+\\[-0.30\baselineskip]%  
+\\
+
+\section{Grants and Awards}
+2013-2014 CUNY Graduate Center Doctoral Student Research Grant (\$1200)\\
+\\[-0.30\baselineskip]% 
+2012 NSF Macroevolutionary Methods in R Workshop, Santa Barbara, CA (full funding to attend)\\
+\\[-0.30\baselineskip]%
+2010-2011 CUNY Graduate Center Doctoral Student Research Grant (\$1500)\\
+\\[-0.30\baselineskip]%
+2012 CUNY Graduate Center Student Travel Grant (\$300)\\
+\\[-0.30\baselineskip]%
+2009-2014 Science Fellowship, CUNY Graduate Center (\$24,000/year)\\
+\\[-0.30\baselineskip]%
+2006-2007 Sichuan University, China, Excellent graduate student scholarship I\\
+\\[-0.30\baselineskip]%
+2004-2005  Sichuan University, China, Excellent study undergraduate scholarship I\\
+\\[-0.30\baselineskip]%
+2003 Sichuan University, China, Excellent study undergraduate scholarship III\\
+\\[-0.30\baselineskip]%
+\\
+
+\section{Reviewer Experience}
+Italian Journal of Zoology\\
+\\[-0.30\baselineskip]% 
+Sichuan Journal of Zoology\\
+\\[-0.30\baselineskip]% 
+\\
+
+\section{Extracurricular Activities}
+volunteer during 2002-2009 in Sichuan University Environmental Student Association, Conservation International, WWF, Jane Goodall's Roots and Shoots, Chengdu Bird Watching Society\\
+\\[-0.30\baselineskip]% 
+wildlife survey\\
+\\[-0.30\baselineskip]% 
+reading, programming, bird watching, photography, jogging, hiking, biking
+ 
+ 
+\end{document}
