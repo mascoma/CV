@@ -9,6 +9,8 @@
  bottom=20mm,
  }
 
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
 %A Few Useful Packages
 \usepackage{marvosym}
@@ -90,7 +92,7 @@
     \textsc{Address:}   & 78 College St., Hanover, NH 03755 \\
     \textsc{Phone:}     & (718) 200-0932 | (603) 646-9397 \\
     \textsc{email:}     &  \href{mailto:chenx1122@gmail.com}{chenx1122@gmail.com}\\
-    \textsc{website:}     &  \href{https://xcbiology.wordpress.com/}{xcbiology.wordpress.com}\\
+    \textsc{website:}     &  \href{https://datachenblog.com/}{datachenblog.com}\\
     \textsc{status:}     & permanent resident (Green card holder)\\
     
 \end{tabular}
@@ -99,25 +101,28 @@
 \\
 %Section: Summary
 \section{Summary}
-\par{Highly motivated and innovative computational biologist with specialization in biostatistics, mathematical modeling, bioinformatics, evolution, genomics, microbiology, zoology. Expertise in designing pipelines to process high-throughput sequencing data for phylogenomics, metagenomics and developing models and statistical methods to answer evolutionary questions. Passionate about getting new ideas and learning new skills. Self educated in programming, database, graphic design. Effective communicator and teacher that can conceptualize complex information to audiences with varied background. Strong team spirit and management skills. Experienced in managing multiple projects with different collaborators simultaneously.
+\par{Data scientist with specialization in statistics, machine learning, mathematical modeling, bioinformatics. Expertise in processing large scale dataset (e.g. NGS data), building quantitative models to describe complicated systems and mining meaningful patterns and information from complexed datasets (structured, semi-structured and unstructured). Effective communicator that have presented my research projects to audiences with varied background. Experienced in managing multiple projects with different collaborators simultaneously. Passionate about new ideas and learning new skills.
 }
 \\
 
 %Section: Work Experience at the top
 \section{Experience}
 \begin{tabular}{lp{12cm}}
-Current-Mar, 2015 & Postdoctoral Research Associate, Dartmouth College, US \\&\footnotesize{I am working on projects of microbe social behaviors and epigenetics using computational tools in Dr. Zhaxybayeva's lab. I developed mathematical models to interpret the interactions between gene transfer agents (GTAs), a phage-like element, and the host bacteria. I built a pipeline to process the metagenomic dataset and to investigate the environmental DNAs uptake behaviors in Halophile communities. I examined the genome-wide methylation and gene expression patterns to understand the thermal adaptation of thermotogae bacteria. I also mentored the undergraduate and graduate students. }\\\multicolumn{2}{c}{} \\
-Dec, 2014-Sep, 2009& Graduate Assistant (PhD program), Graduate Center, CUNY, US\\&\footnotesize{I led a phylogenomic project and developed a pipeline to infer the phylogeny using high-throughput sequencing data. I performed macroevolution, biogeography, phylogeny, phylogeography, population genetics, geometric morphometric studies in multiple amphibian and reptile groups. I also did molecular biology wet lab work including DNA extraction, PCR, Sanger sequencing.}\\\multicolumn{2}{c}{} \\
-Dec, 2014-Sep, 2009&Adjunct lecturer, College of Staten Island, CUNY, US\\&\footnotesize{I taught General Biology Lab (Bio 171), Introduction Biology Lab (Bio 107), Evolution (Bio 322) and tutored General biology.}\\ 
-\multicolumn{2}{c}{} \\
-Sep, 2003-Aug, 2009&Sichuan University, China\\&\footnotesize{I performed molecular biology lab work including bacterial culture, gene clone, accomplished a geometric study project and participated multiple field survey projects.}\\ 
+Current-Mar, 2015 & Computational biologist (postdoc), Dartmouth College, US \\& \footnotesize{
+\tabitem Build pipelines to process next generation sequencing datasets from multiple platforms \tabitem Design database for the features of microbe communities\tabitem Analyze the microbe communities by detecting the correlations of taxonomy and functional genes and classifying the communities using clustering methods\tabitem Examine the potential correlation of genomic methylation and gene expressions \tabitem Design quantitative models to describe and simulate a special bacteria-phage interaction system\tabitem Visualize and report the results of analyses and interpret to collaborates \tabitem Mentor undergraduate and graduate students }\\\multicolumn{2}{c}{} \\
+Dec, 2014-Sep, 2009& Computational biologist (PhD program), Graduate Center, CUNY, US\\&\footnotesize{
+\tabitem Build predictive models for multivariable datasets to determine the key factors and potential correlations with the pattern of species diversifications\tabitem Use principle component analysis to reduce the high dimensional data and detect the potential clusters\tabitem Use Bayesian methods, likelihood ratio test, AIC, BIC for model selection\tabitem Phylogenetic analysis}\\\multicolumn{2}{c}{} \\
+Dec, 2014-Sep, 2009&Adjunct lecturer, College of Staten Island, CUNY, US\\&\footnotesize{
+\tabitem General Biology Lab (Bio 171) 
+\tabitem Introduction Biology Lab (Bio 107)
+\tabitem Evolution (Bio 322)}\\ 
 \multicolumn{2}{c}{} \\
 \end{tabular}
 
 %Section: Education
 \section{Education}
 \begin{tabular}{lp{12cm}}	
-May, 2016&  Bioinformatics (ChIP-Seq data analysis) workshop, San Juan, Puerto Rico.\\\multicolumn{2}{c}{} \\
+May, 2016&  Bioinformatics (RNASeq data analysis) workshop, San Juan, Puerto Rico.\\\multicolumn{2}{c}{} \\
 Sep, 2009-Dec, 2014 & PhD, The City University of New York, NY | Program: Biology | Major: Computational Biology  | Thesis: Integrating phylogenomics, biogeography and systematics to explore the taxonomy and the rise of the ratsnakes | Advisor: Dr. Frank T. Burbrink\\\multicolumn{2}{c}{} \\
 June, 2013& NSF Next-generation Sequencing Data for Phylogenetics and Phylogeography workshop at NESCent, Durham, NC\\\multicolumn{2}{c}{} \\
 June, 2012& NSF Macroevolutionary methods in R workshop, Santa Barbara, CA\\\multicolumn{2}{c}{} \\
@@ -129,32 +134,33 @@ June, 2012& NSF Macroevolutionary methods in R workshop, Santa Barbara, CA\\\mul
 %Section: Scholarships and additional info
 \section{Skills}
 \begin{tabular}{lp{12cm}}
-Biology& biostatistics, bioinformatics, population genetics, genetics, molecular biology, genomics,  evolution, ecology, microbiology, zoology\\\multicolumn{2}{c}{} \\
-Computer& R, Python, MySQL, C++, JavaScript, Perl, Java,  circos, D3, regular expression, Unix/Linux (bash, awk), {\fb \LaTeX}, markdown, Microsoft Office, Adobe Photoshop, Adobe Illustrator\\\multicolumn{2}{c}{} \\
-Math and Statistics&calculus, linear algebra, geometry, statistics, probability, mathematical modeling (deterministic, stochastic), machine learning \\\multicolumn{2}{c}{} \\
-Languages&English, Chinese\\\multicolumn{2}{c}{} \\
-Teaching&Syllabus construction, lecturing\\\multicolumn{2}{c}{} \\
+Statistics& hypothesis testing and confidence intervals, regression models, principal component analysis \\\multicolumn{2}{c}{} \\
+Machine learning& regression, clustering, Bayesian, dimensionality reduction \\\multicolumn{2}{c}{} \\
+Mathematical modeling& ordinary different equation (ODE) system, stochastic simulation \\\multicolumn{2}{c}{} \\
+Programming languages and software& R, Python (Pandas, NumPy, SciPy, Biopython, Scikit), C++, MySQL, CLC Genomics Workbench, SAMtools, MATLAB, Java, Unix/Linux, Cloud computing \\\multicolumn{2}{c}{} \\
+Biology& molecular biology, genomics, microbiology, population genetics, ecology, evolution \\\multicolumn{2}{c}{} \\
+Selected Coursework& Calculus, Linear Algebra, Probability and Statistics, Hadoop Fundamentals, Data Analysis on Hadoop  \\\multicolumn{2}{c}{} \\
+Others& LaTex, regular expression, markdown, JavaScript, Perl, CIRCOS, D3, scientific writing and presenting, Microsoft Excel, Adobe Illustrator, Adobe Photoshop, Chinese \\\multicolumn{2}{c}{} \\ 
 \end{tabular}
 \\
 
 %Section: Publications
 \section{Publications}
-Yuan, Z., W. Zhou, \textbf{X. Chen}\textsuperscript{*}, N.A. Poyarkov Jr., H. Chen, N. Jang-Liaw, W. Chou, N. J. Matzke, K. Iizuka, M. Min, S.L. Kuzmin, Y. Zhang, D.C. Cannatella, D.M. Hillis, J. Che. (2016) Spatiotemporal Diversification of the True Frogs (Genus \textit{Rana}): An Historical Framework for a Widely Studied Group of Model Organisms. (under review)
+\textbf{Xin Chen}, Alan R. Lemmon, Emily Moriarty Lemmon, R. Alexander Pyron, Frank T. Burbrink. (2016) Temporal and spatial dynamics of species diversification reveal the processes of diversification in global ratsnakes using high-throughput sequence data. (Under review)\\ 
+\\[-0.30\baselineskip]%
+Yuan, Z., W. Zhou\textsuperscript{*}, \textbf{X. Chen}\textsuperscript{*}, N.A. Poyarkov Jr., H. Chen, N. Jang-Liaw, W. Chou, N. J. Matzke, K. Iizuka, M. Min, S.L. Kuzmin, Y. Zhang, D.C. Cannatella, D.M. Hillis, J. Che. (2016) Spatiotemporal Diversification of the True Frogs (Genus \textit{Rana}): An Historical Framework for a Widely Studied Group of Model Organisms. Systematic Biology. (accepted)\\
 \textsuperscript{*equal first author}
 \\
 \\[-0.30\baselineskip]%
-\textbf{Xin Chen}, Alan R. Lemmon, Emily Moriarty Lemmon, R. Alexander Pyron, Frank T. Burbrink. (2016) Comparing Methods for Estimating the Phylogeny of Ratsnakes from Phylogenomic Data. (under review)\\ 
+Peng, G., Q. Liu,  F. Zhu; G. Zhong, \textbf{X. Chen}, E.A. Myers, L. Zhang, T. Ziegler, T. Nguyen, F. T. Burbrink. 2016. Molecular phylogeography reveals west-east diversification in Stejneger?s pitviper \textit{Viridovipera stejnegeri} (Schmidt, 1925) (Reptilia: Serpentes: Viperidae). Molecular Ecology, 25, 2920-2936. \\
 \\[-0.30\baselineskip]%
-Peng, G., Q. Liu,  F. Zhu; G. Zhong, \textbf{X. Chen}, E.A. Myers, L. Zhang, T. Ziegler, T. Nguyen, F. T. Burbrink. 2016. Molecular phylogeography reveals west-east diversification in Stejneger?s pitviper \textit{Viridovipera stejnegeri} (Schmidt, 1925) (Reptilia: Serpentes: Viperidae). Molecular Ecology. (accepted)
-\\
-\\[-0.30\baselineskip]%
-Fei Zhu, Qin Liu, Liang Zhang, \textbf{Xin Chen}, Fang Yan, Robert Murphy, Cong Guo, Peng Guo. (2016) Molecular phylogeography of white-lipped tree viper (\textit{Trimeresurus albolabris}): A joint influence from heterogeneous habitat and inter-glacial expansion, Zoologica Scripta. (in press) \\
+Fei Zhu, Qin Liu, Liang Zhang, \textbf{Xin Chen}, Fang Yan, Robert Murphy, Cong Guo, Peng Guo. (2016) Molecular phylogeography of white-lipped tree viper (\textit{Trimeresurus}; Viperidae), Zoologica Scripta, 45, 252-262. \\
 \\[-0.30\baselineskip]%
 Kai He, Nai-Qing Hu, \textbf{Xin Chen}, Jia-Tang Li and Xue-Long Jiang. (2016) Interglacial refugia preserved high genetic diversity of the Chinese mole shrew in the mountains of southwest China. Heredity, 116, 23-32. \\
 \\[-0.30\baselineskip]%
 Eliana F. Oliveira, Marcelo Gehara, Vinícius A. São Pedro,  \textbf{Xin Chen}, Edward A. Myers, Frank T. Burbrink, Daniel O. Mesquita, Adrian A. Garda, Guarino R. Colli, Miguel T. Rodrigues, Federico J. Arias, Hussam Zaher, Rodrigo M. L. Santos and Gabriel C. Costa. (2015) Speciation with gene flow in whiptail lizards from a Neotropical xeric biome. Molecular Ecology, 24, 5957-5975. \\
 \\[-0.30\baselineskip]%
-\textbf{Chen, X.}, A. D. McKelvy, L. L. Grismer, M. Matsui, K. Nishikawa and F. T. Burbrink. (2014)  The phylogenetic position and taxonomic status of the Rainbow Tree Snake \textit{Gonyophis margaritatus} (Peters, 1871) (Squamata: colubridae). Zootaxa 3881, 532-548.\\
+\textbf{Chen, X.}, A. D. McKelvy, L. L. Grismer, M. Matsui, K. Nishikawa and F. T. Burbrink. (2014)  The phylogenetic position and taxonomic status of the Rainbow Tree Snake \textit{Gonyophis margaritatus} (Peters, 1871) (Squamata: colubridae). Zootaxa, 3881, 532-548.\\
 \\[-0.30\baselineskip]%
 \textbf{Chen, X.}, Jiang, K., Guo, P., Huang, S., Rao, D., Ding, L., Takeuchi, H., Che, J., Zhang, Y., Myers, E. A. and F.T, Burbrink. (2014) Assessing species boundaries and the phylogenetic position of the rare Szechwan ratsnake, \textit{Euprepiophis perlaceus} (Serpentes: Colubridae), using coalescent-based methods. Molecular Phylogenetics and Evolution, 70, 130-136.\\
 \\[-0.30\baselineskip]%
@@ -162,9 +168,9 @@ Eliana F. Oliveira, Marcelo Gehara, Vinícius A. São Pedro,  \textbf{Xin Chen}, E
 \\[-0.30\baselineskip]%
 Burbrink, F.T., \textbf{Chen, X.}, Myers, E.A., Brandley, M.C. and Pyron, R.A. (2012) Evidence for determinism in species diversification and contingency in phenotypic evolution during adaptive radiation. Proceedings of the Royal Society B: Biological Sciences, 279, 4817-4826.\\
 \\[-0.30\baselineskip]%
-Song Huang, Li Ding, Frank T. Burbrink, Jun Yang, Jietang Huang, Chen Lin, \textbf{Xin Chen}, Yaping Zhang. (2012) A New Species of the Genus \textit{Elaphe} (Squamata: Colubridae) from Zoige County, Sichuan, China. Asian Herpetological Research. 3, 38-45.\\
+Song Huang, Li Ding, Frank T. Burbrink, Jun Yang, Jietang Huang, Chen Lin, \textbf{Xin Chen}, Yaping Zhang. (2012) A New Species of the Genus \textit{Elaphe} (Squamata: Colubridae) from Zoige County, Sichuan, China. Asian Herpetological Research, 3, 38-45.\\
 \\[-0.30\baselineskip]%
-Guo, P., C. Li, A. Malhotra, Q. Liu, \textbf{X. Chen}, K. Jiang, Y. Wang. (2011) Molecular Phylogeography of Jerdon's Pit Viper \textit{Protobothrops jerdonii} (G\"unther, 1875): Importance of the Tibetan Plateau Uplift. Journal of Biogeography. 38, 2326-2336.\\
+Guo, P., C. Li, A. Malhotra, Q. Liu, \textbf{X. Chen}, K. Jiang, Y. Wang. (2011) Molecular Phylogeography of Jerdon's Pit Viper \textit{Protobothrops jerdonii} (G\"unther, 1875): Importance of the Tibetan Plateau Uplift. Journal of Biogeography, 38, 2326-2336.\\
 \\[-0.30\baselineskip]%
 Wu, Y. K., Y. Z. Wang, K. Jiang, \textbf{X. Chen}, J. Hanken. (2009) Homoplastic Evolution of External Coloration in Asian Stout Newts (\textit{Pachytriton}) Inferred from Molecular Phylogeny. Zoologica Scripta, 39, 9-22.\\
 \\[-0.30\baselineskip]%
@@ -177,6 +183,10 @@ Wu, Y. K., Y. Z. Wang, K. Jiang, \textbf{X. Chen}, J. Hanken. (2009) Homoplastic
 
 
 \section{Presentations}
+\textbf{Chen, X.}, M. Ouellette, A.M. Makkay, A. Ventosa, R.T. Papke, O. Zhaxybayeva. (July 2016) Consumption of environmental DNA in hypersaline environments. Astrobiology Graduate Conference 2016, Boulder, CO.\\
+\\[-0.30\baselineskip]%
+\textbf{Chen, X.}, O. Zhaxybayeva. (June 2016) Could gene transfer agent still be a selfish genetic element? The 22nd annual Boston Bacterial Meeting. \\
+\\[-0.30\baselineskip]%
 \textbf{Chen, X.}, M. Ouellette, A.M. Makkay, A. Ventosa, R.T. Papke, O. Zhaxybayeva. (May 2016) Biased extracellular DNA consumption by the archaeon \textit{Haloferax volcanii}.  Halophiles 2016, San Juan, Puerto Rico.\\
 \\[-0.30\baselineskip]%
 \textbf{Chen, X.}, O. Zhaxybayeva. (Feb 2016) Could gene transfer agent still be a selfish genetic element? Microbiology and Molecular Pathogenesis Program (M2P2) Retreat, Dartmouth College.\\
@@ -202,6 +212,8 @@ Irene Feng, \textbf{Xin Chen}, Olga Zhaxybayeva. (May 2015) Bacterial DNA modifi
 \\
 
 \section{Grants and Awards}
+2016 Astrobiology Graduate Conference. (full funding invitation)\\
+\\[-0.30\baselineskip]%
 2016 NSF Young Investigator Travel Grants. (\$800)\\
 \\[-0.30\baselineskip]%
 2013-2014 CUNY Graduate Center Doctoral Student Research Grant (\$1200)\\
